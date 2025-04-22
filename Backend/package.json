@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/AndresGordillo17/Herramientas#readme",
   "dependencies": {
+    "cors": "^2.8.5",
+    "cross": "^1.0.0",
     "express": "^5.1.0"
   }
 }

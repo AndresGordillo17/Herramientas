@@ -1,26 +1,19 @@
-console.log('hola mundo')
-// index.js
-const express = require('express');
-const app = express();
+const express = require('express'); 
+const cors = require('cors');
 
-// Puerto del servidor
-const PORT = 3030;
+const app = express(); 
+const PORT = 3000;
 
-// Ruta de ejemplo
+app.use(cors());
+
 app.get('/', (req, res) => {
-  res.send('¡Hola desde Express!');
+  res.send('¡Hola mundo!');
 });
 
 app.get('/ping', (req, res) => {
-  res.status(200).json(
-    {
-      message:'pong'
-    }
-  )
+  res.json({ respuesta: 'Andres Tituaña' }); 
 });
-// Iniciar el servidor
+
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
 });
-
-

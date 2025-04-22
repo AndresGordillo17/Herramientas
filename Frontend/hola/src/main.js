@@ -1,12 +1,18 @@
+let message = document.querySelector('#message')
 let pingButton = document.querySelector('#pingButton')
-
 
 pingButton.addEventListener('click', getPingFromWebService)
 
 function getPingFromWebService(){
   const url = 'http://localhost:3000/ping'
-  //Encadenar los datos de la url con la respuesta 
-  fetch (url).then((response) => {
-    console.log(response)
-  })
+  fetch(url)
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data)
+      message.innerHTML = data.respuesta; // ← Usa 'respuesta' como está en el servidor
+    })
+    .catch(function(error){
+      console.log(error)
+      message.innerHTML = "No se encontró el servidor"
+    })
 }
