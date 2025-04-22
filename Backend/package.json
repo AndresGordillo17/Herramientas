@@ -1,0 +1,22 @@
+{
+  "name": "hello",
+  "version": "1.0.0",
+  "description": "web service hola",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndresGordillo17/Herramientas.git"
+  },
+  "author": "Andres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndresGordillo17/Herramientas/issues"
+  },
+  "homepage": "https://github.com/AndresGordillo17/Herramientas#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

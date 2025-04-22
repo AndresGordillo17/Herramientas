@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "name": "libros",
+  "version": "1.0.0",
+  "description": "libros",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndresGordillo17/Herramientas.git"
+  },
+  "author": "Andres",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndresGordillo17/Herramientas/issues"
+  },
+  "homepage": "https://github.com/AndresGordillo17/Herramientas#readme"
+}
