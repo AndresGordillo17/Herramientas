@@ -1,3 +1,5 @@
+// index.js
+
 const express = require('express'); 
 const cors = require('cors');
 
@@ -14,6 +16,7 @@ app.get('/ping', (req, res) => {
   res.json({ respuesta: 'Andres Tituaña' }); 
 });
 
-app.listen(PORT, () => {
-  console.log(`Servidor corriendo en http://localhost:${PORT}`);
+// Escuchar en 0.0.0.0 para permitir conexiones externas
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Servidor corriendo en http://0.0.0.0:${PORT}`);
 });
