@@ -1,13 +1,6 @@
+ Proyecto Básico con Hono
 
-# Proyecto Básico con Hono
-
-## Requisitos 
-
-- Node.js instalado (versión 18+ recomendada)
-- Un editor de código (por ejemplo, VS Code)
-- Conexión a internet para instalar dependencias
-
-## Instalación del Proyecto
+ Instalación del Proyecto
 
 1. Crea una carpeta para el proyecto e inicializa con npm:
 
@@ -17,7 +10,7 @@ npm init -y
 
 2. Instala Hono como dependencia:
 
-```bash
+```
 npm install hono
 ```
 
@@ -44,8 +37,7 @@ app.get('/saludo/:nombre', (c) => {
 app.listen(3000)
 console.log('Servidor corriendo en http://localhost:3000')
 ```
-
-## Ejecuta el siguiente comando en la raíz del proyecto:
+ Ejecuta el siguiente comando en la raíz del proyecto:
 
 ```
 node index.js
