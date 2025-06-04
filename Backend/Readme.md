@@ -10,6 +10,7 @@ Proyecto Node.js + Docker en AWS
     sudo apt update
 ~~~
 - Actualiza la lista de paquetes disponibles desde los repositorios configurados.
+  
 2.-
 ~~~
   sudo apt install apt-transport-https ca-certificates curl software-properties-common
