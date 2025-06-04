@@ -138,7 +138,7 @@ Verificar estado Docker:
 sudo systemctl status Docker
 
 Dockerfile para la aplicación
-
+~~~
 FROM node:20.1-alpine3.18
 
 WORKDIR /app
@@ -162,9 +162,9 @@ sudo docker build -t node-hello .
 Ejecutar el contenedor:
 
 sudo docker run -d -p 8080:8080 --name hello --restart on-failure node-hello:latest
-
+~~~
 Sincronización con Git
-
+~~~
 git status
 
 git add .
@@ -172,4 +172,4 @@ git add .
 git commit -m "crud libros "
 
 git push
-
+~~~
