@@ -1,12 +1,13 @@
 {
   "dependencies": {
-    "express": "^5.1.0"
+    "@hono/node-server": "^1.14.3",
+    "express": "^5.1.0",
+    "hono": "^4.7.11"
   },
   "name": "libros",
   "version": "1.0.0",
   "description": "libros",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/AndresGordillo17/Herramientas/issues"
   },
-  "homepage": "https://github.com/AndresGordillo17/Herramientas#readme"
+  "homepage": "https://github.com/AndresGordillo17/Herramientas#readme",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
 }
