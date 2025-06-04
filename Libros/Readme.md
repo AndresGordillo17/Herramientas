@@ -28,7 +28,7 @@ GET http://localhost:8080/libros?autor=Andres
 
 \*\*Ejemplo response:\*\*
 
-\```json
+~~~ json
 
 [
 
@@ -37,7 +37,7 @@ GET http://localhost:8080/libros?autor=Andres
 { "id": 2, "titulo": "cgfs", "autor": "Jose" }
 
 ]
-
+~~~
 2\. GET /libros/:id
 
 Devuelve un libro específico por ID.
@@ -47,9 +47,9 @@ Si el libro no existe, devuelve código 404.
 GET http://localhost:8080/libros/2
 
 ejemplo :
-
+~~~
 { "id": 2, "titulo": "cgfs", "autor": "Jose" }
-
+~~~
 3\. POST /libros
 
 Crea un nuevo libro.
@@ -59,7 +59,7 @@ El body JSON debe incluir "titulo" y "autor".
 Si faltan, devuelve 400.
 
 Ejemplo request:
-
+~~~
 POST http://localhost:8080/libros
 
 Content-Type: application/json
@@ -71,7 +71,7 @@ Content-Type: application/json
 "autor": "Nuevo Autor"
 
 }
-
+~~~
 4\. PUT /libros/:id
 
 Actualiza un libro existente por ID.
@@ -83,7 +83,7 @@ Si el libro no existe, devuelve 404.
 Si faltan campos, devuelve 400.
 
 Ejemplo request:
-
+~~~
 PUT http://localhost:8080/libros/2
 
 Content-Type: application/json
@@ -95,7 +95,7 @@ Content-Type: application/json
 "autor": "Autor Modificado"
 
 }
-
+~~~
 5\. DELETE /libros/:id
 
 Elimina un libro por ID.
@@ -103,40 +103,40 @@ Elimina un libro por ID.
 Si el libro no existe, devuelve 404.
 
 Ejemplo request:
-
+~~~
 DELETE http://localhost:8080/libros/3
-
+~~~
 Comandos Docker usados
 
 Actualizar paquetes:
-
+~~~
 sudo apt update
-
+~~~
 Instalar herramientas necesarias:
-
+~~~
 sudo apt install apt-transport-https ca-certificates curl software-properties-common
-
+~~~
 Añadir clave GPG de Docker:
-
+~~~
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-
+~~~
 Añadir repositorio oficial Docker:
-
+~~~
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
-
+~~~
 Verificar disponibilidad Docker:
-
+~~~
 apt-cache policy docker-ce
-
+~~~
 Instalar Docker:
-
+~~~
 
 sudo apt install docker-ce
-
+~~~
 Verificar estado Docker:
-
+~~~
 sudo systemctl status Docker
-
+~~~
 Dockerfile para la aplicación
 ~~~
 FROM node:20.1-alpine3.18
