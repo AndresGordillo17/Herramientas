@@ -1,8 +1,10 @@
 {
   "dependencies": {
     "@hono/node-server": "^1.14.3",
+    "dotenv": "^16.5.0",
     "express": "^5.1.0",
-    "hono": "^4.7.11"
+    "hono": "^4.7.11",
+    "mariadb": "^3.4.2"
   },
   "name": "libros",
   "version": "1.0.0",

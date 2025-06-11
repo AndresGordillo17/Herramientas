@@ -1,0 +1,21 @@
+{
+  "name": "backendmariadb",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --loader ts-node/esm src/index.ts",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.14.3",
+    "dotenv": "^16.5.0",
+    "hono": "^4.7.11",
+    "mariadb": "^3.4.2"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "@types/node": "^22.15.29",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
